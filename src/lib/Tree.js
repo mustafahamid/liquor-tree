@@ -109,6 +109,7 @@ export default class Tree {
     // collect nodes
     this.recurseDown(node => {
       if (predicate(query, node)) {
+        console.log(node)
         matches.push(node)
       }
 
